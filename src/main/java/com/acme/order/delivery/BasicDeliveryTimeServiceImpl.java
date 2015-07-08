@@ -16,8 +16,10 @@ import com.acme.order.pizza.PizzaType;
 public class BasicDeliveryTimeServiceImpl implements DeliveryTimeService {
 
 	@Setter
+	@Autowired
 	private TimeService timeService;
 	@Setter
+	@Autowired
 	private DeliveryTimeStrategy strategy;
 
 	public BasicDeliveryTimeServiceImpl() {
